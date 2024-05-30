@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Logo Creator</h1>
+        <div class="logo-settings">
+            <input type="text" id="logo-text" placeholder="Enter your logo text" />
+            <label for="logo-color">Color:</label>
+            <input type="color" id="logo-color" value="#000000" />
+            <label for="logo-size">Size:</label>
+            <input type="range" id="logo-size" min="10" max="100" value="40" />
+            <label for="logo-font">Font:</label>
+            <select id="logo-font">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+            <button id="generate-logo">Generate Logo</button>
+        </div>
+        <div class="logo-display">
+            <canvas id="logo-canvas"></canvas>
+        </div>
+        <button id="download-logo">Download Logo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
